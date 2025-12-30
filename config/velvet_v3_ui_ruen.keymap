@@ -119,7 +119,7 @@
                   &kp LEFT_ALT  &layer_ru  &kp LCTRL         &mo 2  &kp SPACE    &kp SPACE  &mo 3  &none              &kp LBKT   &kp RBKT
             >;
 
-            display-name = "Base";
+            display-name = "Eng";
         };
 
         ru {
@@ -151,7 +151,7 @@
                    &trans    &trans     &trans    &mo 5      &trans    &trans  &trans     &trans    &kp LBKT   &kp RBKT
             >;
 
-            display-name = "Sym_en";
+            display-name = "Sym_eng";
         };
 
         sym_ru {
