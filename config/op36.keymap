@@ -123,6 +123,20 @@
             bindings = <&chlg &kp HASH &chlg>;
             label = "HASH";
         };
+
+        ru_comma: ru_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&chlg &kp RU_COMMA &chlg>;
+            label = "RU_COMMA";
+        };
+
+        ru_dot: ru_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&chlg &kp RU_DOT &chlg>;
+            label = "RU_DOT";
+        };
     };
 
     keymap {
@@ -152,10 +166,10 @@
 
         sym {
             bindings = <
-  &kp EXCL     &kp AT_SIGN    &kp HASH   &kp DLLR    &kp PRCNT                               &kp CARET  &kp AMPERSAND  &kp STAR   &none           &none
-  &less_than   &left_bracket  &kp COLON  &kp MINUS   &kp LPAR                                &kp RPAR   &kp PLUS       &kp STAR   &right_bracket  &greater_than
-  &left_brace  &none          &hash      &kp UNDER   &forward_slash                          &kp BSLH   &kp EQUAL      &kp COMMA  &kp DOT         &right_brace
-                                         &kp DELETE  &mo 3           &kp ENTER    &kp ENTER  &trans     &trans
+  &kp EXCL     &kp AT_SIGN    &kp HASH    &kp DLLR    &kp PRCNT                               &kp CARET  &kp QMARK  &kp STAR   &none           &none
+  &less_than   &left_bracket  &ampersand  &kp MINUS   &kp LPAR                                &kp RPAR   &kp PLUS   &kp STAR   &right_bracket  &greater_than
+  &left_brace  &none          &hash       &kp UNDER   &forward_slash                          &kp BSLH   &kp EQUAL  &ru_comma  &ru_dot         &right_brace
+                                          &kp DELETE  &mo 3           &kp ENTER    &kp ENTER  &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -174,7 +188,7 @@
 
         hot {
             bindings = <
-  &trans  &trans  &trans  &trans  &kt TILDE                    &trans  &none   &kp QMARK  &trans    &trans
+  &trans  &trans  &trans  &trans  &kt GRAVE                    &trans  &none   &kp QMARK  &trans    &trans
   &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans    &kp LC(PAUSE_BREAK)
   &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &kp LBKT   &kp RBKT  &trans
                           &trans  &trans     &trans    &trans  &trans  &trans
