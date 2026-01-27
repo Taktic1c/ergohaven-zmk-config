@@ -160,10 +160,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2    &kp N3            &kp N4          &kp N5                             &kp N6           &kp N7          &kp N8    &kp N9           &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                              &kp PRINTSCREEN  &kp LEFT_ARROW  &kp UP    &kp RIGHT_ARROW  &kp PAGE_UP
-  &kp ESCAPE     &kp TAB   &none             &kp DELETE      &kp ENTER                          &none            &kp HOME        &kp DOWN  &kp END          &kp PAGE_DOWN
-                                             &trans          &trans     &kp ENTER    &kp ENTER  &mo 3            &kp BACKSPACE
+  &kp N1         &kp N2    &kp N3            &kp N4          &kp N5                                   &kp N6           &kp N7          &kp N8    &kp N9           &kp N0
+  &hml LGUI ESC  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp PAUSE_BREAK                          &kp PRINTSCREEN  &kp LEFT_ARROW  &kp UP    &kp RIGHT_ARROW  &kp PAGE_UP
+  &kp ESCAPE     &kp TAB   &none             &kp DELETE      &kp ENTER                                &none            &kp HOME        &kp DOWN  &kp END          &kp PAGE_DOWN
+                                             &trans          &trans           &kp ENTER    &kp ENTER  &mo 3            &kp BACKSPACE
             >;
 
             display-name = "Nav";
@@ -171,9 +171,9 @@
 
         sym {
             bindings = <
-  &kp EXCL     &kp AT_SIGN    &kp HASH    &kp DLLR    &kp PRCNT                               &kp CARET  &kp AMPS   &kp STAR  &kp PAUSE_BREAK  &kp BACKSPACE
-  &less_than   &left_bracket  &ampersand  &kp MINUS   &kp LPAR                                &kp RPAR   &kp PLUS   &none     &right_bracket   &greater_than
-  &left_brace  &none          &hash       &kp UNDER   &forward_slash                          &kp BSLH   &kp EQUAL  &comma    &dot             &right_brace
+  &kp EXCL     &kp AT_SIGN    &kp HASH    &kp DLLR    &kp PRCNT                               &kp CARET  &kp AMPS   &kp STAR  &none           &kp BACKSPACE
+  &less_than   &left_bracket  &ampersand  &kp MINUS   &kp LPAR                                &kp RPAR   &kp PLUS   &none     &right_bracket  &greater_than
+  &left_brace  &none          &hash       &kp UNDER   &forward_slash                          &kp BSLH   &kp EQUAL  &comma    &dot            &right_brace
                                           &kp DELETE  &mo 3           &kp ENTER    &kp ENTER  &trans     &trans
             >;
 
