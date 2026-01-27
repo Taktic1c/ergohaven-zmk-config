@@ -132,14 +132,14 @@
         comma: comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&chlg &kp RU_COMMA &chlg>;
+            bindings = <&chlg &kp COMMA &chlg>;
             label = "COMMA";
         };
 
         dot: dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&chlg &kp RU_DOT &chlg>;
+            bindings = <&chlg &kp DOT &chlg>;
             label = "DOT";
         };
     };
