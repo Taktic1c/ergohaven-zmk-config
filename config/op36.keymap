@@ -56,6 +56,16 @@
             bindings = <&kp GRAVE>;
             key-positions = <3 4>;
         };
+
+        dot {
+            bindings = <&kp RU_DOT>;
+            key-positions = <13 12>;
+        };
+
+        comma {
+            bindings = <&kp RU_COMMA>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
