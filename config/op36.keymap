@@ -59,12 +59,12 @@
 
         dot {
             bindings = <&kp RU_DOT>;
-            key-positions = <13 12>;
+            key-positions = <22 23>;
         };
 
         comma {
             bindings = <&kp RU_COMMA>;
-            key-positions = <16 17>;
+            key-positions = <26 27>;
         };
     };
 
