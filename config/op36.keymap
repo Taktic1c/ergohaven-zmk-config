@@ -197,21 +197,30 @@
 
         adj {
             bindings = <
-  &bootloader  &kp F1        &kp F2                &kp F3               &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1               &bt BT_SEL 2               &bt BT_SEL 3        &bt BT_CLR
-  &kp LGUI     &hml LALT F5  &hml LEFT_CONTROL F6  &hml RIGHT_SHIFT F7  &kp F8                     &out OUT_BLE  &hmr RIGHT_SHIFT C_VOL_DN  &hmr RIGHT_CONTROL C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
-  &none        &kp F9        &kp F10               &kp F11              &kp F12                    &out OUT_USB  &kp C_PREV                 &kp C_PP                   &kp C_NEXT          &studio_unlock
-                                                   &trans               &trans   &trans    &trans  &trans        &trans
+  &bootloader  &kp F1        &kp F2                &kp F3               &kp F4                    &bt BT_SEL 0  &bt BT_SEL 1               &bt BT_SEL 2               &bt BT_SEL 3        &bt BT_CLR
+  &kp LGUI     &hml LALT F5  &hml LEFT_CONTROL F6  &hml RIGHT_SHIFT F7  &kp F8                    &out OUT_BLE  &hmr RIGHT_SHIFT C_VOL_DN  &hmr RIGHT_CONTROL C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
+  &none        &kp F9        &kp F10               &kp F11              &kp F12                   &out OUT_USB  &kp C_PREV                 &kp C_PP                   &kp C_NEXT          &studio_unlock
+                                                   &trans               &trans   &to 4    &trans  &trans        &trans
             >;
 
             display-name = "Adjust";
         };
 
-        hot {
+        Game_1 {
             bindings = <
-  &trans  &trans  &trans  &trans  &kp GRAVE                    &trans  &none   &kp QMARK  &trans    &trans
-  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans    &kp LC(PAUSE_BREAK)
-  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &kp LBKT   &kp RBKT  &trans
-                          &trans  &trans     &trans    &trans  &trans  &trans
+  &none  &kp Q  &kp W  &kp E  &none                       &none   &none   &none  &none  &none
+  &none  &kp A  &kp S  &kp D  &none                       &none   &none   &none  &none  &none
+  &none  &none  &none  &none  &none                       &trans  &trans  &none  &none  &trans
+                       &none  &mo 5  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        Game_2 {
+            bindings = <
+  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &trans  &trans  &trans  &trans  &to 0
+  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0                    &trans  &trans  &trans  &trans  &trans
+  &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans
+                                            &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
     };
